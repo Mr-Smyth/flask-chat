@@ -18,7 +18,7 @@ def user(username):
 
 @app.route('/<username>/<message>')
 def send_message(username, message):
-    return f"Hi here is your username: {username} and here is your message: {message}"
+    return f"{username} here is your message: {message}"
 
 
 app.run(host=os.getenv("IP"), port=int(os.getenv("PORT")), debug=True)
